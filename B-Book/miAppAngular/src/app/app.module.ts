@@ -9,6 +9,9 @@ import { InicioComponent } from './inicio/inicio.component';
 import { LugaresComponent } from './lugares/lugares.component';
 import { QuienesComponent } from './quienes/quienes.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CentrosComponent } from './centros/centros.component';
+import { LibroDetalleComponent } from './libro-detalle/libro-detalle.component';
+import { CategoriaDetalleComponent } from './categoria-detalle/categoria-detalle.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContactoComponent } from './contacto/contacto.component';
     InicioComponent,
     LugaresComponent,
     QuienesComponent,
-    ContactoComponent
+    ContactoComponent,
+    CentrosComponent,
+    LibroDetalleComponent,
+    CategoriaDetalleComponent
   ],
   imports: [
     BrowserModule,

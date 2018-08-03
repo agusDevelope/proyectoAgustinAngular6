@@ -1,5 +1,5 @@
 <app-nav>Cargando...</app-nav>
-<section style="display:flex">
+<!-- <section style="display:flex">
     <aside class="col-md-4">
         <h2>Categorías</h2>
         <div class="list-group">
@@ -15,4 +15,28 @@
         </div>
 
     </aside>
-<router-outlet></router-outlet>
+</section> -->
+
+<section class="grid">
+    <aside>
+        <div class="secciones">
+            
+        <ul id="subnav" class="metro-nav metro-nav-vertical">
+                <h5 class="icon-cat">Categorías</h5>
+                    <li><a href="#" >BetSellers</a></li>
+                    <li><a href="#">Nuevos Lanzamientos</a></li>
+                    <li><a href="#">Clásicos</a></li>
+                    <li><a href="#">Infantiles</a></li>
+                    <li><a href="#">Juveniles</a></li>
+                    <li><a href="#">2da Mano</a></li>
+                    <li><a href="#">Antiguos</a></li>    
+            </ul>
+        </div>
+    </aside>
+
+        <div>
+
+            <router-outlet></router-outlet>
+        </div>
+        
+</section>
