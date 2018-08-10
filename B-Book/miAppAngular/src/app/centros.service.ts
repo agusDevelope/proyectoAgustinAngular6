@@ -6,14 +6,15 @@ import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CentrosService {
+export class CentrosService  {
 
   constructor() { }
 
   getCentros(): Observable<Centros[]> {
     return of(centrosList);
   }
-  getCentrosl(id: number): Observable<Centros> {
+  getCentro(id: number): Observable<Centros> {
     return of(centrosList.find(centro => centro.id === id));
   }
 }
+
