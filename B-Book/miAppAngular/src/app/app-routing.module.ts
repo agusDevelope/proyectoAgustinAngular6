@@ -5,6 +5,8 @@ import { LugaresComponent} from './lugares/lugares.component';
 import { QuienesComponent} from './quienes/quienes.component';
 import { ContactoComponent} from './contacto/contacto.component';
 import { CentrosComponent} from './centros/centros.component';
+import { LibroDetalleComponent} from './libro-detalle/libro-detalle.component';
+import { CategoriaDetalleComponent} from './categoria-detalle/categoria-detalle.component';
 
 const routes: Routes = [
   {
@@ -27,6 +29,14 @@ const routes: Routes = [
      path: 'centros',
      component: CentrosComponent
   },
+  {
+    path: 'libro-detalle',
+    component: LibroDetalleComponent
+ },
+ {
+  path: 'categoria-detalle',
+  component: CategoriaDetalleComponent
+},
   { path: '', redirectTo: '/inicio', pathMatch: 'full' }
 ];
 

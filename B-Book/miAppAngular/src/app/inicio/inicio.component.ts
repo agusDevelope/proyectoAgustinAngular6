@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Inicio } from '../inicio';
+import { InicioService } from '../inicio.service';
+
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  inicio: Inicio [] = [];
+
+  constructor(private inicioService: InicioService ) { }
 
   ngOnInit() {
+    this.getInicio();
+  }
+
+  getInicio(): void {
+    this.inicioService.getInicios()
+    .subscribe(inicio => this.inicio = inicio.slice(0, 12));
   }
 
 }

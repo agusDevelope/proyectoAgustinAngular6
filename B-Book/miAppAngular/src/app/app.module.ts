@@ -12,6 +12,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { CentrosComponent } from './centros/centros.component';
 import { LibroDetalleComponent } from './libro-detalle/libro-detalle.component';
 import { CategoriaDetalleComponent } from './categoria-detalle/categoria-detalle.component';
+import { ListaInicioComponent } from './lista-inicio/lista-inicio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CategoriaDetalleComponent } from './categoria-detalle/categoria-detalle
     ContactoComponent,
     CentrosComponent,
     LibroDetalleComponent,
-    CategoriaDetalleComponent
+    CategoriaDetalleComponent,
+    ListaInicioComponent
   ],
   imports: [
     BrowserModule,
